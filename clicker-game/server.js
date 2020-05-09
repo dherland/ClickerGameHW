@@ -9,5 +9,5 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("build"));
 }
 app.listen(port, function(){
-    console.log("Server is listening on port" + port);
+    console.log("Server is online at https://localhost:" + port);
 })

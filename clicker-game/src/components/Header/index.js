@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css"
 
 
 function Header(props) {
@@ -7,11 +6,11 @@ function Header(props) {
         <nav className={props.nav}>
             <div className="container">
                 <div className={props.row}>
-                    <div className={props.column} id="navElement"><h1 onClick={props.refreshPage}> <span>Princess Memory Game</span> </h1>
+                    <div className={props.column} id="navElement"><h1 onClick={props.refreshPage}> <span>Skate Brand Memory Game</span> </h1>
                     </div>
                     <div className={props.column} id="navElement"><h3>Click an image to begin</h3>
                     </div>
-                    <div id="navElement"><h3>Score: {props.score} | Top Score: </h3>
+                    <div id="navElement"><h3>Score: {props.score} | Top Score: {props.score} </h3>
                     </div>
                 </div>
             </div>
