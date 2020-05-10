@@ -14,12 +14,9 @@ code {
     monospace;
 }
 
-.card {
-  background-color: blue;
-  height: 100%;
-
-}
 
 #root {
   height: 100%;
+  background-color: lawngreen;
+  /* background: url(images/berrics.png);  */
 }

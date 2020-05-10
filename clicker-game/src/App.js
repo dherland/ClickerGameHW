@@ -106,12 +106,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header score={this.state.score} column="col-md-6" row="row" nav="navbar navbar-dark bg-light bg-secondary sticky-top" refreshPage={this.refreshPage}/>
+        <Header score={this.state.score} nav="navbar navbar-dark bg-light bg-secondary sticky-top" refreshPage={this.refreshPage}/>
         <Container>
         <Row>
           {this.state.brands.map(brand => {
             return (
-              <Column key={brand.id} column="col-sm-6">
+              <Column column="col-sm-6" key={brand.id}>
                 <CharacterCard
                   image={brand.image}
                   onClick={() => {
