@@ -14,15 +14,3 @@ code {
     monospace;
 }
 
-.card {
-  background-color: blue;
-  height: 100%;
-  justify-content: space-evenly;
-}
-
-#root {
-  display: grid;
-  height: auto;
-  align-content: space-evenly;
-  /* justify-content: space-evenly; */
-}
