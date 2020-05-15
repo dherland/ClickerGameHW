@@ -3,9 +3,9 @@ import "./style.css";
 
 function CharacterCard(props) {
   return (
-      <div className="card" onClick={props.onClick}>
+      <div className="card col-lg-4" onClick={props.onClick}>
           
-              <img src={props.image}className="card-img-top" alt="..." />
+              <img src={props.image} />
          
 
       </div>

@@ -14,7 +14,6 @@ class App extends Component {
     this.state = {
       brands,
       score: 0,
-      topScore: 0,
       clickedBrands: []
     }
     this.shuffleCards();
@@ -85,7 +84,6 @@ class App extends Component {
   reset() {
     this.setState({
       score: 0,
-      topScore: 0,
       clickedBrands: []
     });
 
@@ -108,10 +106,11 @@ class App extends Component {
       <div>
         <Header score={this.state.score} nav="navbar navbar-dark bg-light bg-secondary sticky-top" refreshPage={this.refreshPage}/>
         <Container>
+        <div className = "grid-container"></div>
         <Row>
           {this.state.brands.map(brand => {
             return (
-              <Column column="col-sm-6" key={brand.id}>
+              // <Column column="col-lg-6" key={brand.id}>
                 <CharacterCard
                   image={brand.image}
                   onClick={() => {
@@ -119,7 +118,7 @@ class App extends Component {
                   }
                   }
                 />
-              </Column>
+              // </Column>
             )
           })}
         </Row>
